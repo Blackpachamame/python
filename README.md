@@ -13,6 +13,7 @@ Aquí colocare lo aprendido y la resolución de los desafíos de las clases de P
 | **Tipos de datos simples**       | `str`, `int`, `float`, `bool`, `None`            | `string`, `number`, `boolean`, `null`               |
 | **Tipos de datos compuestos**    | `list`, `dict`, `set`                            | `array`, `object`, `set`                            |
 | **Cadenas multilínea**           | `""" Texto con \n saltos de línea """`           | `"Texto con \n saltos de línea"`                    |
+| **Convertir a entero**           | `int(valor)`                                     | `parseInt(valor)`                                   |
 | **Convertir a mayúsculas**       | `.upper()`                                       | `.toUpperCase()`                                    |
 | **Convertir a minúsculas**       | `.lower()`                                       | `.toLowerCase()`                                    |
 | **Reemplazar subcadenas**        | `.replace("viejo", "nuevo")`                     | `.replace("viejo", "nuevo")`                        |
