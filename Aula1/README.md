@@ -1,9 +1,25 @@
 # Aula 1: Comenzando con Python
 
-## Para saber más: ¿Qué es Python?
+## Índice
+- [¿Qué es Python?](#qué-es-python)
+- [¿Qué es Google Colaboratory?](#qué-es-google-colaboratory)
 
-Python es un lenguaje de programación de alto nivel, interpretado y orientado a objetos, creado en 1989 por Guido van Rossum. Su sintaxis simple lo hace ideal para principiantes y se usa en áreas como desarrollo web, ciencia de datos, automatización, y aprendizaje automático. Es compatible con varios sistemas operativos y tiene una gran comunidad con muchas bibliotecas y frameworks. Para más información, puedes consultar su sitio oficial [python.org](https://python.org).
+## ¿Qué es Python?
+Python es un lenguaje de programación de alto nivel, interpretado y orientado a objetos, creado en 1989 por Guido van Rossum. Su sintaxis simple lo hace ideal para principiantes y se usa en áreas como:
 
-## Para saber más: ¿Qué es Google Colaboratory?
+- Desarrollo web
+- Ciencia de datos
+- Automatización de tareas
+- Inteligencia artificial y aprendizaje automático
 
-Google Colab es una herramienta que permite escribir y ejecutar código Python en un navegador sin necesidad de instalar software. Utiliza máquinas virtuales de Google, que son temporales y se cierran cuando se apaga el navegador o expira la sesión. Puedes reconectar la máquina y seguir trabajando con los mismos recursos, pero los datos se pierden al cerrar la sesión.
+Es compatible con múltiples sistemas operativos y cuenta con una gran comunidad, lo que facilita el acceso a librerías y frameworks.  
+🔗 Para más información, visita su sitio oficial: [python.org](https://python.org).
+
+## ¿Qué es Google Colaboratory?
+Google Colab es una plataforma basada en la nube que permite ejecutar código Python directamente en el navegador sin necesidad de instalación. Sus características principales son:
+
+✅ No requiere configuración ni instalación de Python  
+✅ Permite usar GPUs y TPUs gratuitas para cálculos más rápidos  
+✅ Se basa en **notebooks Jupyter**, ideales para escribir código y documentación en el mismo lugar
+
+📌 **Importante:** Google Colab usa máquinas virtuales temporales. Al cerrar la sesión, los datos almacenados en la máquina se pierden, a menos que se guarden en **Google Drive** o se descarguen localmente.
