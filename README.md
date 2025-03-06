@@ -1,7 +1,14 @@
 # Python
 Aquí colocare lo aprendido y la resolución de los desafíos de las clases de Python.
 
-## Equivalencias entre Python y JavaScript
+## Índice de Equivalencias entre Python y JavaScript
+1. [Conceptos Básicos](#1-conceptos-básicos)
+2. [Operaciones y Conversión de Tipos](#2-operaciones-y-conversión-de-tipos)
+3. [Condicionales y Bucles](#3-condicionales-y-bucles)
+4. [Strings y sus Métodos](#4-strings-y-sus-métodos)
+5. [Listas/Arrays y sus Métodos](#5-listasarrays-y-sus-métodos)
+6. [Diccionarios/Objetos](#6-diccionariosobjetos)
+7. [Funciones](#7-funciones)
 
 ### 1. Conceptos Básicos
 | **Concepto**                     | **Python**                                       | **JavaScript**                                      |
