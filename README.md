@@ -14,6 +14,7 @@ Aquí colocare lo aprendido y la resolución de los desafíos de las clases de P
 | **Nombres de variables**         | `snake_case` (ej. `lista_estudiantes`)           | `camelCase` (ej. `listaEstudiantes`)                |
 | **Tipos de datos simples**       | `str`, `int`, `float`, `bool`, `None`            | `string`, `number`, `boolean`, `null`, `undefined`  |
 | **Tipos de datos compuestos**    | `list`, `dict`, `set`, `tuple`                   | `array`, `object`, `set`, `Map`                     |
+| **Comprobación de tipo de variable** | `type(x)`                                    | `typeof x`                                          |
 
 ### 2. Operaciones y Conversión de Tipos
 | **Operación**                    | **Python**                                       | **JavaScript**                                      |
