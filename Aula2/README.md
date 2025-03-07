@@ -1,10 +1,16 @@
 # Aula 2: Manipulando datos en Python
 
-## Índice
-1. [Comentarios en Python](#comentarios-en-python)
-2. [Operadores aritméticos](#operadores-aritméticos)
-3. [Métodos de formateo de cadenas](#métodos-de-formateo-de-cadenas)
-4. [Caracteres especiales](#caracteres-especiales)
+- [Aula 2: Manipulando datos en Python](#aula-2-manipulando-datos-en-python)
+  - [Comentarios en Python](#comentarios-en-python)
+    - [Comentarios de una línea](#comentarios-de-una-línea)
+    - [Comentarios de varias líneas](#comentarios-de-varias-líneas)
+  - [Operadores Aritméticos](#operadores-aritméticos)
+  - [Métodos de Formateo de Cadenas](#métodos-de-formateo-de-cadenas)
+    - [f-strings (Python 3.6+)](#f-strings-python-36)
+    - [Operador de formateo (`%`)](#operador-de-formateo-)
+    - [Método `.format()`](#método-format)
+  - [Caracteres Especiales](#caracteres-especiales)
+    - [Ejemplos de uso:](#ejemplos-de-uso)
 
 ## Comentarios en Python
 

@@ -1,8 +1,8 @@
 # Aula 1: Comenzando con Python
 
-## Índice
-- [¿Qué es Python?](#qué-es-python)
-- [¿Qué es Google Colaboratory?](#qué-es-google-colaboratory)
+- [Aula 1: Comenzando con Python](#aula-1-comenzando-con-python)
+  - [¿Qué es Python?](#qué-es-python)
+  - [¿Qué es Google Colaboratory?](#qué-es-google-colaboratory)
 
 ## ¿Qué es Python?
 Python es un lenguaje de programación de alto nivel, interpretado y orientado a objetos, creado en 1989 por Guido van Rossum. Su sintaxis simple lo hace ideal para principiantes y se usa en áreas como:
