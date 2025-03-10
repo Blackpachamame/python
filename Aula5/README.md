@@ -1,143 +1,128 @@
-# Aula 5: Estructuras de Datos
+# Aula 5: Resumen - Estructuras de Datos
 
-- [Aula 5: Estructuras de Datos](#aula-5-estructuras-de-datos)
-  - [Strings: Una secuencia de caracteres](#strings-una-secuencia-de-caracteres)
-    - [**Conversión de Strings a Listas**](#conversión-de-strings-a-listas)
-    - [**Conversión de Listas a Strings**](#conversión-de-listas-a-strings)
+## Índice
+- [Aula 5: Resumen - Estructuras de Datos](#aula-5-resumen---estructuras-de-datos)
+  - [Índice](#índice)
+  - [Strings](#strings)
+    - [Conversión de Strings a Listas](#conversión-de-strings-a-listas)
+    - [Conversión de Listas a Strings](#conversión-de-listas-a-strings)
   - [Manipulación de Listas](#manipulación-de-listas)
+    - [Acceder al último elemento](#acceder-al-último-elemento)
+    - [Invertir una lista](#invertir-una-lista)
   - [Listas en Diccionarios](#listas-en-diccionarios)
   - [Funciones Incorporadas](#funciones-incorporadas)
-    - [**`sum()` - Sumar elementos de una lista**](#sum---sumar-elementos-de-una-lista)
-    - [**`help()` - Consultar documentación**](#help---consultar-documentación)
-    - [**`dir()` - Listar atributos y métodos de un objeto**](#dir---listar-atributos-y-métodos-de-un-objeto)
+    - [sum() - Sumar elementos](#sum---sumar-elementos)
+    - [len() - Obtener la longitud](#len---obtener-la-longitud)
+    - [range() - Generar secuencias](#range---generar-secuencias)
+    - [all() - Verificar valores](#all---verificar-valores)
 
-## Strings: Una secuencia de caracteres
-Las cadenas de texto (**strings**) son secuencias de caracteres indexadas. Cada carácter en una cadena tiene un índice, comenzando en `0` para el primer carácter y en `-1` para el último.
-
-Ejemplo:
-```python
-lenguaje = 'Python'
-print(lenguaje[0], lenguaje[1], lenguaje[2], lenguaje[-3], lenguaje[-2], lenguaje[-1])
-```
-**Salida:**  
-`P y t h o n`
-
-📌 **Importante:** Las cadenas son **inmutables**, lo que significa que **no se pueden modificar directamente** como una lista.
-
-### **Conversión de Strings a Listas**
-Podemos convertir una cadena en una lista utilizando el método `.split()`.  
-Si especificamos un delimitador, la cadena se dividirá en base a él; si no se especifica, se divide por espacios.
+## Strings
+Las **cadenas de texto (strings)** son secuencias de caracteres **indexadas**.  
 
 ```python
-pregunta = '¿Quién vino primero? ¿El huevo? ¿O fue la serpiente?'
-lista_palabras = pregunta.split('?')
-print(lista_palabras)
+texto = "Python"
+print(texto[0], texto[-1])  # Salida: P n
 ```
-**Salida:**  
-`['¿Quién vino primero', ' ¿El huevo', ' ¿O fue la serpiente', '']`
+📌 **Los strings son inmutables**, por lo que **no se pueden modificar directamente**.
 
-Si no se define un delimitador:
-```python
-lista_palabras = pregunta.split()
-print(lista_palabras)
-```
-**Salida:**  
-`['¿Quién', 'vino', 'primero?', '¿El', 'huevo?', '¿O', 'fue', 'la', 'serpiente?']`
-
-### **Conversión de Listas a Strings**
-Para unir los elementos de una lista en una cadena, usamos `.join()`.
+### Conversión de Strings a Listas
+El método `.split()` divide un string en una lista usando un separador.
 
 ```python
-mezclas = ['Rojo y azul: morado', 'Rojo y amarillo: naranja', 'Azul y amarillo: verde']
-resultado = '. '.join(mezclas)
-print(resultado)
+frase = "Hola, ¿cómo estás?"
+palabras = frase.split()  # Divide por espacios
+print(palabras)  # ['Hola,', '¿cómo', 'estás?']
 ```
-**Salida:**  
-`Rojo y azul: morado. Rojo y amarillo: naranja. Azul y amarillo: verde`
+
+### Conversión de Listas a Strings
+El método `.join()` une los elementos de una lista en un string.
+
+```python
+colores = ["Rojo", "Verde", "Azul"]
+resultado = ", ".join(colores)
+print(resultado)  # "Rojo, Verde, Azul"
+```
+
+---
 
 ## Manipulación de Listas
-Las listas permiten almacenar múltiples valores en una sola variable y ofrecen diversos métodos para manipular sus elementos.
+Las **listas** permiten almacenar múltiples valores y ofrecen métodos útiles.
 
-Ejemplo base:
+| Método          | Descripción                           | Ejemplo                   |
+| --------------- | ------------------------------------- | ------------------------- |
+| `.append(x)`    | Agrega `x` al final                   | `lista.append(10)`        |
+| `.insert(i, x)` | Inserta `x` en la posición `i`        | `lista.insert(1, "Hola")` |
+| `.pop(i)`       | Elimina y devuelve `i`-ésimo elemento | `lista.pop(2)`            |
+| `.sort()`       | Ordena la lista en orden ascendente   | `lista.sort()`            |
+| `.reverse()`    | Invierte el orden de la lista         | `lista.reverse()`         |
+
+### Acceder al último elemento
+Usamos índices negativos para acceder a los elementos desde el final.
+
 ```python
-razas_de_perros = ['Labrador Retriever', 'Bulldog Francés', 'Pastor Alemán', 'Poodle']
+numeros = [10, 20, 30, 40, 50]
+print(numeros[-1])  # Salida: 50
 ```
 
-| **Método**     | **Descripción**                                   | **Ejemplo**                                     |
-| -------------- | ------------------------------------------------- | ----------------------------------------------- |
-| `insert(i, x)` | Inserta `x` en la posición `i`                    | `razas_de_perros.insert(1, 'Golden Retriever')` |
-| `append(x)`    | Agrega `x` al final de la lista                   | `razas_de_perros.append('Beagle')`              |
-| `pop(i)`       | Elimina y devuelve el elemento en la posición `i` | `razas_de_perros.pop(1)`                        |
-| `index(x)`     | Devuelve el índice de `x` en la lista             | `razas_de_perros.index('Pastor Alemán')`        |
-| `sort()`       | Ordena la lista en orden ascendente               | `razas_de_perros.sort()`                        |
-
-Ejemplo:
+### Invertir una lista
+Varias formas de invertir una lista:
 ```python
-razas_de_perros.insert(1, 'Golden Retriever')
-print(razas_de_perros)
+# Con slicing
+print(lista[::-1])  
+
+# Con .reverse() (modifica la lista original)
+lista.reverse()
+
+# Con reversed() (devuelve un iterador)
+print(list(reversed(lista)))
 ```
-**Salida:**  
-`['Labrador Retriever', 'Golden Retriever', 'Bulldog Francés', 'Pastor Alemán', 'Poodle']`
+
+---
 
 ## Listas en Diccionarios
-Podemos almacenar listas dentro de un diccionario, lo que nos permite asociar múltiples valores a una misma clave.
+Las listas pueden almacenarse dentro de diccionarios para estructurar mejor los datos.
 
-Ejemplo:
 ```python
 tienda = {
-    'nombres': ['televisión', 'celular', 'notebook', 'heladera', 'estufa'],
-    'precios': [2000, 1500, 3500, 4000, 1500]
+    "productos": ["Laptop", "Teléfono", "Tablet"],
+    "precios": [1500, 700, 1200]
 }
+```
 
-for clave, elementos in tienda.items():
-    print(f'Clave: {clave}\nElementos:')
-    for dato in elementos:
-        print(dato)
-```
-**Salida:**  
-```
-Clave: nombres
-Elementos:
-televisión
-celular
-notebook
-heladera
-estufa
-
-Clave: precios
-Elementos:
-2000
-1500
-3500
-4000
-1500
-```
-También podemos modificar los valores dentro del diccionario:
+Podemos recorrer los datos con un bucle:
 ```python
-tienda['nombres'].append('microondas')
-tienda['precios'].append(1200)
+for clave, valores in tienda.items():
+    print(f"{clave}: {valores}")
 ```
+
+---
 
 ## Funciones Incorporadas
-Python proporciona varias funciones predefinidas que facilitan la manipulación de datos.
 
-### **`sum()` - Sumar elementos de una lista**
+### sum() - Sumar elementos
+Calcula la suma de los elementos en un iterable.
 ```python
-precios = [100.0, 400.0, 200.0]
-total = sum(precios)
-print(total)  # Salida: 700.0
+numeros = [10, 20, 30]
+print(sum(numeros))  # Salida: 60
 ```
 
-### **`help()` - Consultar documentación**
+### len() - Obtener la longitud
+Devuelve la cantidad de elementos en una lista, string o tupla.
 ```python
-help(print)
+nombres = ["Ana", "Carlos", "María"]
+print(len(nombres))  # Salida: 3
 ```
-Muestra la documentación de `print()`.
 
-### **`dir()` - Listar atributos y métodos de un objeto**
+### range() - Generar secuencias
+Crea una secuencia de números, útil en bucles.
 ```python
-lista = [1, 2, 3]
-print(dir(lista))
+for i in range(1, 6):
+    print(i)  # Salida: 1, 2, 3, 4, 5
 ```
-**Salida:**  
-Muestra todos los métodos disponibles para listas (`append`, `pop`, `sort`, etc.).
+
+### all() - Verificar valores
+Retorna `True` si **todos los elementos** en un iterable son `True`.
+```python
+numeros = [2, 3, 5, 7]
+print(all(n % d != 0 for d in range(2, n)))  # Verifica si n es primo
+```
