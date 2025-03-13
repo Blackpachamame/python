@@ -2,9 +2,9 @@
 Aquí colocare lo aprendido y la resolución de los desafíos de las clases de Python.
 
 ## Índice de Aulas
-1. [Aula 1: Comenzando con Python](Aula1/Readme.md)
-2. [Aula 2: Manipulando Datos en Python](Aula2/Readme.md)
-3. [Aula 3: Estructuras Condicionales](Aula3/Readme.md)
+1. [Aula 1: Comenzando con Python](./Aula1/README.md)
+2. [Aula 2: Manipulando Datos en Python](./blob/main/Aula2/README.md)
+3. [Aula 3: Estructuras Condicionales](../../Aula3/Readme.md)
 4. [Aula 4: Estructuras de Repetición](Aula4/Readme.md)
 5. [Aula 5: Estructuras de Datos](Aula5/Readme.md)
 
