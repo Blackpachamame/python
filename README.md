@@ -2,11 +2,11 @@
 Aquí colocare lo aprendido y la resolución de los desafíos de las clases de Python.
 
 ## Índice de Aulas
-1. [Aula 1: Comenzando con Python](./Aula1/README.md)
-2. [Aula 2: Manipulando Datos en Python](./Aula2/README.md)
-3. [Aula 3: Estructuras Condicionales](./Aula3/README.md)
-4. [Aula 4: Estructuras de Repetición](./Aula4/README.md)
-5. [Aula 5: Estructuras de Datos](./Aula5/README.md)
+1. [Aula 1: Comenzando con Python](./01-primeros-pasos/Aula1/README.md)
+2. [Aula 2: Manipulando Datos en Python](./01-primeros-pasos/Aula2/README.md)
+3. [Aula 3: Estructuras Condicionales](./01-primeros-pasos/Aula3/README.md)
+4. [Aula 4: Estructuras de Repetición](./01-primeros-pasos/Aula4/README.md)
+5. [Aula 5: Estructuras de Datos](./01-primeros-pasos/Aula5/README.md)
 
 ## Índice de Equivalencias entre Python y JavaScript
 1. [Conceptos Básicos](#1-conceptos-básicos)
