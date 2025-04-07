@@ -164,6 +164,6 @@ for i in range(1, 6):
 ### all() - Verificar valores
 Retorna `True` si **todos los elementos** en un iterable son `True`.
 ```python
-numeros = [2, 3, 5, 7]
+n = 7
 print(all(n % d != 0 for d in range(2, n)))  # Verifica si n es primo
 ```
