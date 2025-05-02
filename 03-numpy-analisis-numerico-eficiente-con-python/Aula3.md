@@ -46,7 +46,7 @@ np.linalg.norm(moscu - y)
 En lugar de ajustar la pendiente "a ojo", podemos calcularla con una fórmula basada en álgebra lineal. Si `x` son las fechas y `y` los precios:
 
 ```python
-N = len(x)
+N = np.size(x)
 a = (N * np.sum(x * y) - np.sum(x) * np.sum(y)) / (N * np.sum(x**2) - (np.sum(x))**2)
 b = np.mean(y) - a * np.mean(x)
 ```
